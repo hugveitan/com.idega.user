@@ -116,8 +116,8 @@ public class IWBundleStarter implements IWBundleStartable {
 			userNode.setAuthorizedRoles(roles);
 			userNode.setWindowClass(applicationClass);
 			
-			String jspPath = iwma.getBundle(CoreConstants.WORKSPACE_BUNDLE_IDENTIFIER).getJSPURI("workspace.jsp");
-			userNode.setJspUri(jspPath);
+			String faceletPath = iwma.getBundle(CoreConstants.WORKSPACE_BUNDLE_IDENTIFIER).getFaceletURI("workspace.xhtml");
+			userNode.setFaceletUri(faceletPath);
 			
 			
 		}
